@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="#FAF1E4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="0dp"
+        android:background="#435334"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="19dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="ChromaDeals."
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/lonceng"
+            android:background="#435334"
+            />
+
+        <ImageButton
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/keranjang"
+            android:background="#435334"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="#9EB384"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="795dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="102dp"
+            android:layout_height="96dp"
+            android:background="#435334"
+            android:src="@mipmap/homebar"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:layout_width="102dp"
+            android:layout_height="96dp"
+            android:background="#9EB384"
+            android:src="@mipmap/searchbar"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:layout_width="102dp"
+            android:layout_height="96dp"
+            android:background="#9EB384"
+            android:src="@mipmap/favbar"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:layout_width="102dp"
+            android:layout_height="96dp"
+            android:background="#9EB384"
+            android:src="@mipmap/accountbar"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,8 @@
     tools:context=".Login"
     android:orientation="vertical">
 
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,6 +25,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingContraints" />
+
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,20 +47,8 @@
         app:layout_editor_absoluteY="144dp"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="252dp"
-        android:background="@drawable/radius"
-        android:fontFamily="@font/inter_regular"
-        android:hint="Insert your name here..."
-        android:paddingLeft="12dp"
-        android:textSize="13dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -75,36 +68,8 @@
         app:layout_editor_absoluteY="221dp"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="328dp"
-        android:background="@drawable/radius"
-        android:fontFamily="@font/inter_regular"
-        android:hint="Insert your email here..."
-        android:paddingLeft="12dp"
-        android:textSize="13dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="400dp"
-        android:background="@drawable/radius"
-        android:fontFamily="@font/inter_regular"
-        android:hint="Insert your password here..."
-        android:paddingLeft="12dp"
-        android:textSize="13dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -124,6 +89,9 @@
         app:layout_editor_absoluteY="144dp"
         tools:ignore="MissingConstraints" />
 
+
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -142,22 +110,123 @@
         app:layout_editor_absoluteY="144dp"
         tools:ignore="MissingConstraints" />
 
-    <EditText
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="350dp"
         android:layout_height="40dp"
-        android:layout_marginTop="472dp"
+        android:layout_marginTop="252dp"
         android:background="@drawable/radius"
-        android:fontFamily="@font/inter_regular"
-        android:hint="Insert your number here..."
-        android:paddingLeft="12dp"
-        android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:hint="Insert your name here..."
+            android:inputType="textPersonName"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="328dp"
+        android:background="@drawable/radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:hint="Insert your email here..."
+            android:inputType="textEmailAddress"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:passwordToggleEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:hint="Insert your password here..."
+            android:inputType="textPassword"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="472dp"
+        android:background="@drawable/radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insert your number here..."
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
     <Button
+        android:id="@+id/register"
         android:layout_width="180dp"
         android:layout_height="53dp"
         android:layout_marginTop="624dp"
@@ -171,6 +240,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -192,7 +264,7 @@
             tools:ignore="TextSizeCheck" />
 
         <TextView
-            android:id="@+id/login_blue"
+            android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -202,6 +274,8 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

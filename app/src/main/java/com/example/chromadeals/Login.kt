@@ -10,7 +10,7 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val registerBlueTextView = findViewById<View>(R.id.register_blue)
+        val registerBlueTextView = findViewById<View>(R.id.register)
 
         registerBlueTextView.setOnClickListener {
             val intent = Intent(this, Register::class.java)
