@@ -3,7 +3,10 @@ package com.example.chromadeals
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class SplashScreen : AppCompatActivity() {
     private val SPLASH_TIME_OUT: Long = 3000
@@ -20,7 +23,7 @@ class SplashScreen : AppCompatActivity() {
     }
 
     private fun navigateToMainActivity() {
-        val intent = Intent(this@SplashScreen, Login::class.java)
+        val intent = Intent(this@SplashScreen, Home::class.java)
         startActivity(intent)
         finish()
     }

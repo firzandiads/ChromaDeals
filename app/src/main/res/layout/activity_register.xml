@@ -210,6 +210,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
         >
 
         <com.google.android.material.textfield.TextInputEditText
