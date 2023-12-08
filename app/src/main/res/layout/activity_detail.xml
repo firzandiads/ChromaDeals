@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailActivity"
+    android:background="@color/cream"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/backBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:padding="8dp"
+                    android:src="@drawable/arrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Schedio."
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="48dp"
+                    android:textColor="@color/green3"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/view2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/backBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="0dp"
+                    android:layout_height="290dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/grey_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/backBtn" />
+
+                <ImageView
+                    android:id="@+id/itemPic"
+                    android:layout_width="305dp"
+                    android:layout_height="270dp"
+                    android:layout_margin="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/item_4"
+                    app:layout_constraintBottom_toBottomOf="@+id/view2"
+                    app:layout_constraintEnd_toEndOf="@+id/view2"
+                    app:layout_constraintStart_toStartOf="@+id/view2"
+                    app:layout_constraintTop_toTopOf="@+id/view2" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view2">
+
+                    <TextView
+                        android:id="@+id/titleTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Title"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/priceTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp210.000"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintTop_toBottomOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:src="@drawable/star"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"                    />
+
+                <TextView
+                    android:id="@+id/scoreTxt"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.6"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Rating"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:id="@+id/descriptionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:text="Schedio elevates online shopping with curated, inspiring designs for every taste. From trendy to classic, it's your exclusive hub for unique style. Express creativity through captivating designs, turning each purchase into a journey in limitless design. Explore diverse choices and find true satisfaction at Schedio – where design meets desire, creating a boundless shopping experience." />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addToCartBtn"
+                style="@android:style/Widget.Button"
+                android:layout_margin="16dp"
+                android:background="@drawable/green_btn"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy now"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

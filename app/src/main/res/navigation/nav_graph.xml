@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen2">
+
+    <activity
+        android:id="@+id/register2"
+        android:name="com.example.schedio.Login.Register"
+        android:label="Register" />
+    <activity
+        android:id="@+id/login2"
+        android:name="com.example.schedio.Login.Login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.schedio.Activity.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.example.schedio.Activity.DetailActivity"
+        android:label="activity_detail"
+        tools:layout="@layout/activity_detail" />
+    <activity
+        android:id="@+id/cartActivity"
+        android:name="com.example.schedio.Activity.CartActivity"
+        android:label="activity_cart"
+        tools:layout="@layout/activity_cart" />
+    <activity
+        android:id="@+id/deliveredActivity"
+        android:name="com.example.schedio.Login.DeliveredActivity"
+        android:label="activity_delivered"
+        tools:layout="@layout/activity_delivered" />
+    <activity
+        android:id="@+id/splashScreen2"
+        android:name="com.example.schedio.SplashScreen"
+        android:label="activity_splash_screen"
+        tools:layout="@layout/activity_splash_screen" />
+</navigation>
