@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,7 +14,7 @@
         android:theme="@style/Theme.Schedio"
         tools:targetApi="31">
         <activity
-            android:name=".Login.DeliveredActivity"
+            android:name=".UI.DeliveredActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.CartActivity"
@@ -22,10 +23,10 @@
             android:name=".Activity.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".Login.Register"
+            android:name=".UI.Register"
             android:exported="false" />
         <activity
-            android:name=".Login.Login"
+            android:name=".UI.Login"
             android:exported="false" />
         <activity
             android:name=".Activity.MainActivity"

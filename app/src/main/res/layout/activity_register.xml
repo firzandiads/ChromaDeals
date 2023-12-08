@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAF1E4"
+    tools:context=".UI.register.RegisterFragment"
     android:orientation="vertical">
 
     <TextView
@@ -144,6 +145,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="402dp"
         android:background="@drawable/radius"
+        android:inputType="textPassword"
         android:fontFamily="@font/inter_regular"
         android:hint="Insert your password here..."
         android:paddingLeft="12dp"
@@ -160,6 +162,7 @@
         android:layout_marginTop="474dp"
         android:background="@drawable/radius"
         android:fontFamily="@font/inter_regular"
+        android:inputType="textPassword"
         android:hint="Confirm your password here..."
         android:paddingLeft="12dp"
         android:textSize="13dp"

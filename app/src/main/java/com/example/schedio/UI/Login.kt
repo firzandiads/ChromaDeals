@@ -1,4 +1,4 @@
-package com.example.schedio.Login
+package com.example.schedio.UI
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

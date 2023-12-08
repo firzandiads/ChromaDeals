@@ -3,7 +3,9 @@ package com.example.schedio
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.schedio.Login.Login
+import com.example.schedio.UI.Login
+//import com.example.schedio.UI.Login
+import com.example.schedio.UI.login.LoginFragment
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
@@ -24,6 +26,7 @@ class SplashScreen : AppCompatActivity() {
     }
 
     private fun navigateToMainActivity() {
+        //val intent = Intent(this@SplashScreen, Login::class.java)
         val intent = Intent(this@SplashScreen, Login::class.java)
         startActivity(intent)
         finish()

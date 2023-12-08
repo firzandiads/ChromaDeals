@@ -7,11 +7,11 @@
 
     <activity
         android:id="@+id/register2"
-        android:name="com.example.schedio.Login.Register"
+        android:name="com.example.schedio.UI.Register"
         android:label="Register" />
     <activity
         android:id="@+id/login2"
-        android:name="com.example.schedio.Login.Login"
+        android:name="com.example.schedio.UI.Login"
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
     <activity
@@ -31,7 +31,7 @@
         tools:layout="@layout/activity_cart" />
     <activity
         android:id="@+id/deliveredActivity"
-        android:name="com.example.schedio.Login.DeliveredActivity"
+        android:name="com.example.schedio.UI.DeliveredActivity"
         android:label="activity_delivered"
         tools:layout="@layout/activity_delivered" />
     <activity

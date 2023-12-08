@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAF1E4"
+    tools:context=".UI.login.LoginFragment"
     android:orientation="vertical">
 
     <TextView
@@ -38,6 +39,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:id="@+id/email"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginTop="272dp"
@@ -67,11 +69,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:id="@+id/password"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginTop="348dp"
         android:background="@drawable/radius"
         android:fontFamily="@font/inter_regular"
+        android:inputType="textPassword"
         android:hint="Insert your password here..."
         android:paddingLeft="12dp"
         android:textSize="13dp"

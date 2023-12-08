@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.schedio.Adapter.CartAdapter
 import com.example.schedio.Helper.ManagmentCart
-import com.example.schedio.Login.DeliveredActivity
+import com.example.schedio.UI.DeliveredActivity
 import com.example.schedio.R
 import kotlin.math.roundToInt
 

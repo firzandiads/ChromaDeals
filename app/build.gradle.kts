@@ -108,7 +108,7 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("de.hdodenhof:circleimageview:3.1.0")
 
-    // Koin
+    // Koin, Dependency injection
     implementation("io.insert-koin:koin-android:3.1.2")
 
 
