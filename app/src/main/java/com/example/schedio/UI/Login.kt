@@ -37,11 +37,11 @@ class Login : AppCompatActivity() {
             observeIsLogin().observe(this@Login){
                 it.let{ data ->
                     if (data != null){
-                        //findnaccontroler
                         val intent = Intent(this@Login, MainActivity::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this@Login,"not found", Toast.LENGTH_SHORT).show()
+                        showValidationError("Email atau password salah")
                     }
                 }
             }
@@ -62,6 +62,8 @@ class Login : AppCompatActivity() {
 
                 if(!email.text.isNullOrBlank() && !password.text.isNullOrBlank()){
                     viewModel.getDataLogin(email.text.toString(), password.text.toString())
+                } else {
+                    showValidationError("Data Tidak Valid")
                 }
             }
 
@@ -70,6 +72,11 @@ class Login : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+    }
+
+    private fun showValidationError(message: String) {
+        Toast.makeText(this@Login, message, Toast.LENGTH_SHORT).show()
+
     }
 
 }

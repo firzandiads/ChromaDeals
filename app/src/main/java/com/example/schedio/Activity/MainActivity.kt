@@ -22,11 +22,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun bottomNavigation() {
-        val homeBtn = findViewById<LinearLayout>(R.id.homeBtn)
+        //val homeBtn = findViewById<LinearLayout>(R.id.homeBtn)
         val cartBtn = findViewById<LinearLayout>(R.id.cartBtn)
         val otherBtn = findViewById<LinearLayout>(R.id.otherBtn)
 
-        homeBtn.setOnClickListener { startActivity(Intent(this@MainActivity, MainActivity::class.java)) }
+        //homeBtn.setOnClickListener { startActivity(Intent(this@MainActivity, MainActivity::class.java)) }
         cartBtn.setOnClickListener { startActivity(Intent(this@MainActivity, CartActivity::class.java)) }
         otherBtn.setOnClickListener { startActivity(Intent(this@MainActivity, OtherActivity::class.java)) }
     }

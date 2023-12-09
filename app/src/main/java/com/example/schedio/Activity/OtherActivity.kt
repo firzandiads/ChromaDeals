@@ -1,5 +1,6 @@
 package com.example.schedio.Activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewManager
@@ -26,6 +27,7 @@ class OtherActivity : AppCompatActivity() {
     private lateinit var viewManager: RecyclerView.LayoutManager
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityOtherBinding.inflate(layoutInflater)
@@ -35,8 +37,22 @@ class OtherActivity : AppCompatActivity() {
         viewManager = LinearLayoutManager(this)
         getUsersData()
 
+        bottomNavigation()
+
+
 
     }
+
+    private fun bottomNavigation() {
+        val homeBtn = findViewById<LinearLayout>(R.id.homeBtn)
+        val cartBtn = findViewById<LinearLayout>(R.id.cartBtn)
+        //val otherBtn = findViewById<LinearLayout>(R.id.otherBtn)
+
+        homeBtn.setOnClickListener { startActivity(Intent(this@OtherActivity, MainActivity::class.java)) }
+        cartBtn.setOnClickListener { startActivity(Intent(this@OtherActivity, CartActivity::class.java)) }
+        //otherBtn.setOnClickListener { startActivity(Intent(this@OtherActivity, OtherActivity::class.java)) }
+    }
+
 
     private fun getUsersData() {
         var retrofit = Retrofit.Builder()
