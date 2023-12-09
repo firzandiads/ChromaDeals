@@ -29,25 +29,6 @@ class Login : AppCompatActivity() {
         init()
         observeData()
 
-
-
-        /*val loginButton: Button = findViewById(R.id.login)
-        val registerBlueButton: TextView = findViewById(R.id.register)*/
-
-/*        loginButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-
-        registerBlueButton.setOnClickListener {
-            val intent = Intent(this, Register::class.java)
-            startActivity(intent)
-        }*/
-
-
-
-
-
     }
 
     private fun observeData() {

@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewManager
 import android.widget.LinearLayout
-import androidx.compose.ui.node.ViewAdapter
+//import androidx.compose.ui.node.ViewAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.schedio.Adapter.MainAdapter
