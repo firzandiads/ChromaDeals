@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAF1E4"
-    tools:context=".UI.login.LoginFragment"
+    tools:context=".UI.Login"
     android:orientation="vertical">
 
     <TextView

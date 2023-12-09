@@ -1,3 +1,4 @@
+/*
 package com.example.schedio.UI.register
 
 import android.content.Intent
@@ -7,13 +8,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.schedio.UI.login.LoginFragment
 import com.example.schedio.data.local.UserEntity
 import com.example.schedio.databinding.ActivityRegisterBinding
 import org.koin.android.ext.android.inject
 
 
-class RegisterFragment : Fragment() {
+class RegisterFragment : AppCompatActivity() {
     private var _binding: ActivityRegisterBinding? = null
     private val binding get() = _binding!!
     private val viewModel: RegisterViewModel by inject()
@@ -27,11 +29,14 @@ class RegisterFragment : Fragment() {
         init()
         observeData()
 
+*/
 /*
         viewModel = RegisterViewModel(application = requireActivity().application)
+*//*
+
+
+
 */
-
-
 /*
         binding.register.setOnClickListener{
             val username = binding.username.text.toString()
@@ -45,7 +50,8 @@ class RegisterFragment : Fragment() {
             val intent = Intent(requireContext(), Login::class.java)
             startActivity(intent)
         }
-*/
+*//*
+
 
         return binding.root
     }
@@ -55,7 +61,9 @@ class RegisterFragment : Fragment() {
             observeIsRegister().observe(viewLifecycleOwner){
                 it.let{ data ->
                     if(data){
-                        /*findNavController().navigate(R.id.action_registerActivity_to_loginActivity)*/
+                        */
+/*findNavController().navigate(R.id.action_registerActivity_to_loginActivity)*//*
+
                         val intent = Intent(requireContext(), LoginFragment::class.java)
                         startActivity(intent)
                     } else {
@@ -81,4 +89,4 @@ class RegisterFragment : Fragment() {
     }
 
 
-}
+}*/

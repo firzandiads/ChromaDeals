@@ -1,3 +1,4 @@
+/*
 package com.example.schedio.UI.login
 
 import android.content.Intent
@@ -6,11 +7,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import com.example.schedio.UI.register.RegisterFragment
 import com.example.schedio.databinding.ActivityLoginBinding
 import org.koin.android.ext.android.inject
 
-class LoginFragment : Fragment() {
+class LoginFragment : AppCompatActivity() {
     private var _binding: ActivityLoginBinding? = null
     private val binding get() = _binding!!
     private val viewModel: LoginViewModel by inject()
@@ -23,6 +25,7 @@ class LoginFragment : Fragment() {
         init()
         observeData()
 
+*/
 /*        binding.login.setOnClickListener{
 
         }
@@ -30,7 +33,8 @@ class LoginFragment : Fragment() {
         binding.register.setOnClickListener{
             val intent = Intent(requireContext(), Register::class.java)
             startActivity(intent)
-        }*/
+        }*//*
+
 
         return binding.root
     }
@@ -74,4 +78,4 @@ class LoginFragment : Fragment() {
 
 
 
-}
+}*/
