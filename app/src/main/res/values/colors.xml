@@ -9,4 +9,6 @@
     <color name="green3">#435334</color>
     <color name="grey">#DDE1D5</color>
 
+    <color name="shimmer_color">#dddd</color>
+
 </resources>

@@ -5,7 +5,7 @@ import retrofit2.http.GET
 
 interface ApiService {
     @GET("products") //kalo gasalah dari link API nya
-    fun getUsers(): Call<List<Product>>
+    fun getProductData(): Call<MyData>
 
 
 }

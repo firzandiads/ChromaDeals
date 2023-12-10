@@ -90,6 +90,11 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
 
+    //picasso
+    implementation ("com.squareup.picasso:picasso:2.8")
+    // shimmer effect
+    implementation ("com.facebook.shimmer:shimmer:0.5.0")
+
 
 
 }
