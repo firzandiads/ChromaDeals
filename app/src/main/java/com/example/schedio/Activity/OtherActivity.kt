@@ -70,9 +70,13 @@ class OtherActivity : AppCompatActivity() {
         val homeBtn = findViewById<LinearLayout>(R.id.homeBtn)
         val cartBtn = findViewById<LinearLayout>(R.id.cartBtn)
         //val otherBtn = findViewById<LinearLayout>(R.id.otherBtn)
+        val profileBtn = findViewById<LinearLayout>(R.id.profileBtn)
+
 
         homeBtn.setOnClickListener { startActivity(Intent(this@OtherActivity, MainActivity::class.java)) }
         cartBtn.setOnClickListener { startActivity(Intent(this@OtherActivity, CartActivity::class.java)) }
         //otherBtn.setOnClickListener { startActivity(Intent(this@OtherActivity, OtherActivity::class.java)) }
+        profileBtn.setOnClickListener { startActivity(Intent(this@OtherActivity, ProfileActivity::class.java)) }
+
     }
 }
