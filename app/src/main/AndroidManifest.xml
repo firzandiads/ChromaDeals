@@ -16,6 +16,15 @@
         android:theme="@style/Theme.Schedio"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.CatPopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CatNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CatDiscountActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.AboutActivity"
             android:exported="false" />
         <activity

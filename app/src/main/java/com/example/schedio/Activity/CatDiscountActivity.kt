@@ -1,49 +1,30 @@
 package com.example.schedio.Activity
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import android.widget.LinearLayout
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.schedio.Adapter.PupolarAdapter
 import com.example.schedio.Domain.PopularDomain
 import com.example.schedio.R
 
-class MainActivity : AppCompatActivity() {
+class CatDiscountActivity : AppCompatActivity() {
     private lateinit var adapterPupolar: RecyclerView.Adapter<*>
     private lateinit var recyclerViewPupolar: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_cat_discount)
         initRecyclerView()
-        bottomNavigation()
+        backButton()
+
     }
 
-    private fun bottomNavigation() {
-        //val homeBtn = findViewById<LinearLayout>(R.id.homeBtn)
-        val cartBtn = findViewById<LinearLayout>(R.id.cartBtn)
-        val otherBtn = findViewById<LinearLayout>(R.id.otherBtn)
-        val profileBtn = findViewById<LinearLayout>(R.id.profileBtn)
-        val aboutBtn = findViewById<ImageView>(R.id.aboutBtn)
-        val catDiscount = findViewById<ImageView>(R.id.catDiscount)
-        val catNew = findViewById<ImageView>(R.id.catNew)
-        val catPop = findViewById<ImageView>(R.id.catPop)
-
-
-
-        //homeBtn.setOnClickListener { startActivity(Intent(this@MainActivity, MainActivity::class.java)) }
-        cartBtn.setOnClickListener { startActivity(Intent(this@MainActivity, CartActivity::class.java)) }
-        otherBtn.setOnClickListener { startActivity(Intent(this@MainActivity, OtherActivity::class.java)) }
-        profileBtn.setOnClickListener { startActivity(Intent(this@MainActivity, ProfileActivity::class.java)) }
-        aboutBtn.setOnClickListener { startActivity(Intent(this@MainActivity, AboutActivity::class.java)) }
-        catDiscount.setOnClickListener { startActivity(Intent(this@MainActivity, CatDiscountActivity::class.java)) }
-        catNew.setOnClickListener { startActivity(Intent(this@MainActivity, CatNewActivity::class.java)) }
-        catPop.setOnClickListener { startActivity(Intent(this@MainActivity, CatPopActivity::class.java)) }
-
-
+    private fun backButton() {
+        val backBtn = findViewById<ImageView>(R.id.backBtn)
+        backBtn.setOnClickListener { startActivity(Intent(this@CatDiscountActivity, MainActivity::class.java)) }
     }
 
     private fun initRecyclerView() {
@@ -85,47 +66,6 @@ class MainActivity : AppCompatActivity() {
         )
         items.add(
             PopularDomain(
-                "Never over",
-                "Never Over shirt design signifies enduring resilience " +
-                        "and perpetual determination. It often incorporates" +
-                        " minimalist yet impactful elements to convey " +
-                        "a message of continuous strength and perseverance.",
-                "item_4", 4.2, 149.0
-            )
-        )
-        items.add(
-            PopularDomain(
-                "Boss mentality pt.2",
-                "A Boss Mentality shirt design promotes confidence, " +
-                        "leadership, and empowerment. It features bold" +
-                        " elements like strong typography and symbols " +
-                        "associated with success to inspire a proactive " +
-                        "and resilient mindset.",
-                "item_5", 5.0, 279.0
-            )
-        )
-        items.add(
-            PopularDomain(
-                "LIAM",
-                "A Liam Gallagher shirt design captures the " +
-                        "rock 'n' roll spirit with bold typography, " +
-                        "Oasis references, and a rebellious vibe.",
-                "item_6", 3.9, 279.0
-            )
-        )
-        items.add(
-            PopularDomain(
-                "Filthy frank",
-                "Filthy Frank shirt design captures the irreverent" +
-                        " and comedic style of the popular internet personality. " +
-                        "It might feature quirky illustrations, inside jokes," +
-                        " or iconic phrases associated with Filthy Frank's" +
-                        " unique content and persona.",
-                "item_7", 4.1, 149.0
-            )
-        )
-        items.add(
-            PopularDomain(
                 "Bracelet",
                 "A Bracelet themed design highlights the elegance and " +
                         "simplicity of wrist accessories. The design may feature " +
@@ -146,11 +86,10 @@ class MainActivity : AppCompatActivity() {
                 "item_9", 4.5, 149.0
             )
         )
+
         recyclerViewPupolar = findViewById(R.id.view1)
-        recyclerViewPupolar.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        recyclerViewPupolar.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         adapterPupolar = PupolarAdapter(items)
         recyclerViewPupolar.adapter = adapterPupolar
     }
 }
-
-
