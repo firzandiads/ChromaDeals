@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         val catDiscount = findViewById<ImageView>(R.id.catDiscount)
         val catNew = findViewById<ImageView>(R.id.catNew)
         val catPop = findViewById<ImageView>(R.id.catPop)
+        val buynowBtn = findViewById<TextView>(R.id.buynowBtn)
 
 
 
@@ -42,6 +44,7 @@ class MainActivity : AppCompatActivity() {
         catDiscount.setOnClickListener { startActivity(Intent(this@MainActivity, CatDiscountActivity::class.java)) }
         catNew.setOnClickListener { startActivity(Intent(this@MainActivity, CatNewActivity::class.java)) }
         catPop.setOnClickListener { startActivity(Intent(this@MainActivity, CatPopActivity::class.java)) }
+        buynowBtn.setOnClickListener { startActivity(Intent(this@MainActivity, BuyNowActivity::class.java)) }
 
 
     }
